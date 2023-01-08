@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "01-angualr-tdd": {
+    "01-angular-tdd": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/01-angualr-tdd",
+            "outputPath": "dist/01-angular-tdd",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -64,10 +64,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "01-angualr-tdd:build:production"
+              "browserTarget": "01-angular-tdd:build:production"
             },
             "development": {
-              "browserTarget": "01-angualr-tdd:build:development"
+              "browserTarget": "01-angular-tdd:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -75,7 +75,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "01-angualr-tdd:build"
+            "browserTarget": "01-angular-tdd:build"
           }
         },
         "test": {
